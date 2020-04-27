@@ -14,10 +14,10 @@ function decode($str) {
 }
 
 function saveData($data_array) {
-	file_put_contents(__DIR__.'/data.serialized', serialize($data_array), LOCK_EX);
+	file_put_contents('/tmp/data.serialized', serialize($data_array), LOCK_EX);
 }
 
-$data = @file_get_contents(__DIR__.'/data.serialized');
+$data = @file_get_contents('/tmp/data.serialized');
 $data_array = unserialize($data);
 
 if (!$data_array) {

@@ -12,6 +12,14 @@ Linux/windows machine with PHP > v5.0 compatible web server (with SSL domain pre
 
 Linux/windows machine with a web browser (was tested in Chrome and Firefox)
 
+## Dockerized installation:
+
+Run:
+
+```console
+docker-compose up
+```
+
 ## Installation of the server:
 
 * Copy/clone the index.php file to a folder with rw permissions
